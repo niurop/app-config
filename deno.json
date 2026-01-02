@@ -1,0 +1,7 @@
+{
+  "name": "@niurop/app-config",
+  "version": "1.0.0",
+  "exports": "./mod.ts",
+  "license": "MIT",
+  "lock": false
+}
