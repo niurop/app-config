@@ -1,7 +1,17 @@
 {
   "name": "@niurop/app-config",
   "version": "1.0.0",
-  "exports": "./mod.ts",
+  "description": "AppConfig setup for deno applications.",
+  "exports": "./src/mod.ts",
   "license": "MIT",
-  "lock": false
+  "lock": false,
+  "tasks": {
+    "test": "deno test  --allow-read --allow-env --quiet -- argument=value flag"
+  },
+  "imports": {
+    "yaml": "jsr:@std/yaml"
+  },
+  "fmt": {
+    "lineWidth": 120
+  }
 }

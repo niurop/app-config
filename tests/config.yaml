@@ -1,0 +1,4 @@
+auth:
+  enable: true
+  expiration: 3600 # 1 hour in seconds
+  issuer: niurop
