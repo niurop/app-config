@@ -95,7 +95,7 @@ const appConfig = load(
     ],
     // require appConfig.env.PROFILE to be specified
     validate: (appConfig) => appConfig.env.PROFILE !== "",
-  }
+  },
 );
 ```
 
@@ -104,11 +104,7 @@ const appConfig = load(
 If You use components that specify their config needs You can use like this:
 
 ```typescript
-import {
-  DefaultJWTAuthConfig,
-  DefaultJWTAuthSecrets,
-  JWTAuthConfigValidation,
-} from "jsr:@niurop/JWTAuth";
+import { DefaultJWTAuthConfig, DefaultJWTAuthSecrets, JWTAuthConfigValidation } from "jsr:@niurop/JWTAuth";
 
 const appConfig = load(
   {
@@ -121,9 +117,8 @@ const appConfig = load(
     },
   },
   {
-    validate: (appConfig) =>
-      JWTAuthConfigValidation(appConfig.config.auth, appConfig.env),
-  }
+    validate: (appConfig) => JWTAuthConfigValidation(appConfig.config.auth, appConfig.env),
+  },
 );
 ```
 
@@ -169,7 +164,7 @@ const config = loadStatic(
   },
   rawArgs,
   rawEnv,
-  rawConfig
+  rawConfig,
 );
 ```
 
