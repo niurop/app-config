@@ -5,6 +5,7 @@ Application Args, .env Env, and YAML config for Your app.
 
 <div align="center">
 
+[![Master CI](https://github.com/niurop/app-config/actions/workflows/test.yml/badge.svg)](https://github.com/niurop/app-config/actions/workflows/test.yml)
 [![JSR](https://jsr.io/badges/@niurop/app-config)](https://jsr.io/@niurop/app-config)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -94,7 +95,7 @@ const appConfig = load(
     ],
     // require appConfig.env.PROFILE to be specified
     validate: (appConfig) => appConfig.env.PROFILE !== "",
-  },
+  }
 );
 ```
 
@@ -103,7 +104,11 @@ const appConfig = load(
 If You use components that specify their config needs You can use like this:
 
 ```typescript
-import { DefaultJWTAuthConfig, DefaultJWTAuthSecrets, JWTAuthConfigValidation } from "jsr:@niurop/JWTAuth";
+import {
+  DefaultJWTAuthConfig,
+  DefaultJWTAuthSecrets,
+  JWTAuthConfigValidation,
+} from "jsr:@niurop/JWTAuth";
 
 const appConfig = load(
   {
@@ -116,8 +121,9 @@ const appConfig = load(
     },
   },
   {
-    validate: (appConfig) => JWTAuthConfigValidation(appConfig.config.auth, appConfig.env),
-  },
+    validate: (appConfig) =>
+      JWTAuthConfigValidation(appConfig.config.auth, appConfig.env),
+  }
 );
 ```
 
@@ -163,7 +169,7 @@ const config = loadStatic(
   },
   rawArgs,
   rawEnv,
-  rawConfig,
+  rawConfig
 );
 ```
 
