@@ -9,7 +9,7 @@
     "test": "deno test  --allow-read --allow-env --quiet -- argument=value flag"
   },
   "imports": {
-    "yaml": "jsr:@std/yaml"
+    "yaml": "jsr:@std/yaml@1.0.10"
   },
   "fmt": {
     "lineWidth": 120
