@@ -1,4 +1,4 @@
-import { assertThrows } from "jsr:@std/assert";
+import { assertThrows } from "./deps.ts";
 import { validate } from "../src/validate.ts";
 
 Deno.test("empty AppConfig should be valid", () => {

@@ -1,4 +1,4 @@
-import { assertEquals, assertThrows } from "jsr:@std/assert";
+import { assertEquals, assertThrows } from "./deps.ts";
 import { loadConfig, parseConfig } from "../src/config.ts";
 
 Deno.test("parse rawConfig", () => {

@@ -1,4 +1,4 @@
-import { assertEquals, assertThrows } from "jsr:@std/assert";
+import { assertEquals, assertThrows } from "./deps.ts";
 import { load, loadStatic } from "../src/mod.ts";
 
 Deno.test("should load appConfig", () => {

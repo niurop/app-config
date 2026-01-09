@@ -1,4 +1,4 @@
-import { assertEquals, assertThrows } from "jsr:@std/assert";
+import { assertEquals, assertThrows } from "./deps.ts";
 import { cast, getConfigTypeOf, getTypeOf, splitOnEquals } from "../src/utils.ts";
 
 Deno.test("splitOnEquals", () => {

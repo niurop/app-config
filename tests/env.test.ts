@@ -1,4 +1,4 @@
-import { assertEquals, assertThrows } from "jsr:@std/assert";
+import { assertEquals, assertThrows } from "./deps.ts";
 import { loadEnv, parseEnv } from "../src/env.ts";
 
 Deno.test("parse rawEnv", () => {
