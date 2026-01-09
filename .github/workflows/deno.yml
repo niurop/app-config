@@ -38,4 +38,4 @@ jobs:
         run: deno lint
 
       - name: Run tests
-        run: deno tasks test
+        run: deno task test
